@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BGLL"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/connect2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/cardBG"
+        android:textColor="@color/textColor"
+        android:text="CONNECT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cardBG"
+        android:text="BACK"
+        android:textColor="@color/textColor"
+        app:layout_constraintBottom_toTopOf="@+id/connect2"
+        app:layout_constraintEnd_toEndOf="@+id/connect2"
+        app:layout_constraintStart_toStartOf="@+id/connect2" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainFragment"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <ImageView
+            android:id="@+id/overlayImage11"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/overlayImage12"
+            android:layout_alignBottom="@+id/overlayImage12"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp"
+            android:src="@drawable/wheel_view_top" />
+
+        <ImageView
+            android:id="@+id/overlayImage12"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="290dp"
+            android:src="@drawable/wheel_view_top" />
+
+        <TextView
+            android:id="@+id/tvMessage12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/overlayImage11"
+            android:layout_alignBottom="@+id/overlayImage11"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="Temp" />
+
+        <TextView
+            android:id="@+id/tvMessage13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/overlayImage12"
+            android:layout_alignBottom="@+id/overlayImage12"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="Temp" />
+
+        <ImageView
+            android:id="@+id/mainImage"
+            android:layout_width="400dp"
+            android:layout_height="630dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="141dp"
+            android:scaleType="fitXY"
+            android:padding="100dp"
+            android:src="@drawable/truck_view_top_without" />
+
+        <ImageView
+            android:id="@+id/overlayImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/overlayImage2"
+            android:layout_alignBottom="@+id/overlayImage2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp"
+            android:src="@drawable/wheel_view_top" />
+
+        <ImageView
+            android:id="@+id/overlayImage2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="499dp"
+            android:src="@drawable/wheel_view_top" />
+
+        <TextView
+            android:id="@+id/tvMessage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/overlayImage"
+            android:layout_alignBottom="@+id/overlayImage"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="Temp" />
+
+        <TextView
+            android:id="@+id/tvMessage3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/overlayImage2"
+            android:layout_alignBottom="@+id/overlayImage2"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="Temp" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="63dp"
+            android:layout_marginEnd="140dp"
+            android:text="TextView"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
