@@ -7,6 +7,15 @@
     android:background="@color/BGLL"
     android:padding="16dp">
 
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/connect1"
         android:layout_width="0dp"
@@ -31,235 +40,266 @@
         app:layout_constraintEnd_toEndOf="@+id/connect1"
         app:layout_constraintStart_toStartOf="@+id/connect1" />
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainFragment"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="620dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/overlayImage9"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignTop="@+id/overlayImage10"
-            android:layout_alignBottom="@+id/overlayImage10"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="70dp"
-            android:src="@drawable/wheel_view_top" />
+            android:id="@+id/wheel4"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/beam3"
+            app:layout_constraintStart_toEndOf="@+id/beam3"
+            app:layout_constraintTop_toTopOf="@+id/beam3"
+            app:srcCompat="@drawable/wheel_view_top1_preview_rev_1" />
 
         <ImageView
-            android:id="@+id/overlayImage10"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="70dp"
-            android:layout_marginBottom="280dp"
-            android:src="@drawable/wheel_view_top" />
-
-        <TextView
-            android:id="@+id/tvMessage10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/overlayImage9"
-            android:layout_alignBottom="@+id/overlayImage9"
-            android:layout_alignParentStart="true"
-            android:gravity="center"
-            android:text="Temp" />
-
-        <TextView
-            android:id="@+id/tvMessage11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/overlayImage9"
-            android:layout_alignBottom="@+id/overlayImage9"
-            android:layout_alignParentEnd="true"
-            android:gravity="center"
-            android:text="Temp" />
+            android:id="@+id/wheel6"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/beam4"
+            app:layout_constraintStart_toEndOf="@+id/beam4"
+            app:layout_constraintTop_toTopOf="@+id/beam4"
+            app:srcCompat="@drawable/wheel_view_top1_preview_rev_1" />
 
         <ImageView
-            android:id="@+id/overlayImage7"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignTop="@+id/overlayImage8"
-            android:layout_alignBottom="@+id/overlayImage8"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="70dp"
-            android:src="@drawable/wheel_view_top" />
+            android:id="@+id/wheel9"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/bram6"
+            app:layout_constraintEnd_toStartOf="@+id/bram6"
+            app:layout_constraintTop_toTopOf="@+id/bram6"
+            app:srcCompat="@drawable/wheel_view_top1_preview_rev_1" />
 
         <ImageView
-            android:id="@+id/overlayImage8"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="70dp"
-            android:layout_marginBottom="330dp"
-            android:src="@drawable/wheel_view_top" />
-
-        <TextView
-            android:id="@+id/tvMessage8"
+            android:id="@+id/beam4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/overlayImage7"
-            android:layout_alignBottom="@+id/overlayImage7"
-            android:layout_alignParentStart="true"
-            android:gravity="center"
-            android:text="Temp" />
-
-        <TextView
-            android:id="@+id/tvMessage9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/overlayImage8"
-            android:layout_alignBottom="@+id/overlayImage8"
-            android:layout_alignParentEnd="true"
-            android:gravity="center"
-            android:text="Temp" />
+            android:layout_marginTop="180dp"
+            app:layout_constraintEnd_toEndOf="@+id/beam3"
+            app:layout_constraintStart_toStartOf="@+id/beam3"
+            app:layout_constraintTop_toBottomOf="@+id/beam3"
+            app:srcCompat="@drawable/beam2" />
 
         <ImageView
-            android:id="@+id/overlayImage5"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignTop="@+id/overlayImage6"
-            android:layout_alignBottom="@+id/overlayImage6"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="70dp"
-            android:src="@drawable/wheel_view_top" />
+            android:id="@+id/beam5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/bram6"
+            app:layout_constraintEnd_toEndOf="@+id/beam4"
+            app:layout_constraintStart_toStartOf="@+id/beam4"
+            app:layout_constraintTop_toBottomOf="@+id/beam4"
+            app:srcCompat="@drawable/beam2" />
 
         <ImageView
-            android:id="@+id/overlayImage6"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="70dp"
-            android:layout_marginBottom="380dp"
-            android:src="@drawable/wheel_view_top" />
-
-        <TextView
-            android:id="@+id/tvMessage6"
+            android:id="@+id/beam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/overlayImage5"
-            android:layout_alignBottom="@+id/overlayImage5"
-            android:layout_alignParentStart="true"
-            android:gravity="center"
-            android:text="Temp" />
-
-        <TextView
-            android:id="@+id/tvMessage7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/overlayImage6"
-            android:layout_alignBottom="@+id/overlayImage6"
-            android:layout_alignParentEnd="true"
-            android:gravity="center"
-            android:text="Temp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/beam_long" />
 
         <ImageView
-            android:id="@+id/overlayImage3"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignTop="@+id/overlayImage4"
-            android:layout_alignBottom="@+id/overlayImage4"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="70dp"
-            android:src="@drawable/wheel_view_top" />
+            android:id="@+id/beam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/beam"
+            app:layout_constraintStart_toStartOf="@+id/beam"
+            app:layout_constraintTop_toTopOf="@+id/beam"
+            app:srcCompat="@drawable/beam2" />
 
         <ImageView
-            android:id="@+id/overlayImage4"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="70dp"
-            android:layout_marginBottom="450dp"
-            android:src="@drawable/wheel_view_top" />
-
-        <TextView
-            android:id="@+id/tvMessage4"
+            android:id="@+id/beam3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/overlayImage3"
-            android:layout_alignBottom="@+id/overlayImage3"
-            android:layout_alignParentStart="true"
-            android:gravity="center"
-            android:text="Temp" />
-
-        <TextView
-            android:id="@+id/tvMessage5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/overlayImage4"
-            android:layout_alignBottom="@+id/overlayImage4"
-            android:layout_alignParentEnd="true"
-            android:gravity="center"
-            android:text="Temp" />
+            android:layout_marginTop="120dp"
+            app:layout_constraintEnd_toEndOf="@+id/beam2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/beam2"
+            app:layout_constraintTop_toBottomOf="@+id/beam2"
+            app:srcCompat="@drawable/beam2" />
 
         <ImageView
-            android:id="@+id/mainImage"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="141dp"
-            android:padding="100dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/truck_view_top1" />
+            android:id="@+id/bram6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/beam"
+            app:layout_constraintEnd_toEndOf="@+id/beam5"
+            app:layout_constraintStart_toStartOf="@+id/beam5"
+            app:srcCompat="@drawable/beam2" />
 
         <ImageView
-            android:id="@+id/overlayImage"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignTop="@+id/overlayImage2"
-            android:layout_alignBottom="@+id/overlayImage2"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="70dp"
-            android:src="@drawable/wheel_view_top" />
+            android:id="@+id/wheel1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/beam2"
+            app:layout_constraintEnd_toStartOf="@+id/beam2"
+            app:layout_constraintTop_toTopOf="@+id/beam2"
+            app:srcCompat="@drawable/wheel_view_top1_preview_rev_1" />
 
         <ImageView
-            android:id="@+id/overlayImage2"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="70dp"
-            android:layout_marginBottom="530dp"
-            android:src="@drawable/wheel_view_top" />
+            android:id="@+id/wheel3"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/beam3"
+            app:layout_constraintEnd_toStartOf="@+id/beam3"
+            app:layout_constraintTop_toTopOf="@+id/beam3"
+            app:layout_constraintVertical_bias="0.463"
+            app:srcCompat="@drawable/wheel_view_top1_preview_rev_1" />
+
+        <ImageView
+            android:id="@+id/wheel8"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/beam5"
+            app:layout_constraintStart_toEndOf="@+id/beam5"
+            app:layout_constraintTop_toTopOf="@+id/beam5"
+            app:srcCompat="@drawable/wheel_view_top1_preview_rev_1" />
+
+        <ImageView
+            android:id="@+id/wheel10"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/bram6"
+            app:layout_constraintStart_toEndOf="@+id/bram6"
+            app:layout_constraintTop_toTopOf="@+id/bram6"
+            app:srcCompat="@drawable/wheel_view_top1_preview_rev_1" />
+
+        <ImageView
+            android:id="@+id/wheel5"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/beam4"
+            app:layout_constraintEnd_toStartOf="@+id/beam4"
+            app:layout_constraintTop_toTopOf="@+id/beam4"
+            app:srcCompat="@drawable/wheel_view_top1_preview_rev_1" />
+
+        <ImageView
+            android:id="@+id/wheel7"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/beam5"
+            app:layout_constraintEnd_toStartOf="@+id/beam5"
+            app:layout_constraintTop_toTopOf="@+id/beam5"
+            app:srcCompat="@drawable/wheel_view_top1_preview_rev_1" />
+
+        <ImageView
+            android:id="@+id/wheel2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/beam2"
+            app:layout_constraintStart_toEndOf="@+id/beam2"
+            app:layout_constraintTop_toTopOf="@+id/beam2"
+            app:layout_constraintVertical_bias="0.487"
+            app:srcCompat="@drawable/wheel_view_top1_preview_rev_1" />
 
         <TextView
-            android:id="@+id/tvMessage2"
+            android:id="@+id/tvWheel1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/overlayImage"
-            android:layout_alignBottom="@+id/overlayImage"
-            android:layout_alignParentStart="true"
-            android:gravity="center"
-            android:text="Temp" />
+            android:text="Temp"
+            app:layout_constraintBottom_toBottomOf="@+id/wheel1"
+            app:layout_constraintEnd_toStartOf="@+id/beam2"
+            app:layout_constraintStart_toStartOf="@+id/wheel1"
+            app:layout_constraintTop_toTopOf="@+id/wheel1" />
 
         <TextView
-            android:id="@+id/tvMessage3"
+            android:id="@+id/tvWheel2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/overlayImage2"
-            android:layout_alignBottom="@+id/overlayImage2"
-            android:layout_alignParentEnd="true"
-            android:gravity="center"
-            android:text="Temp" />
+            android:text="Temp"
+            app:layout_constraintBottom_toBottomOf="@+id/wheel2"
+            app:layout_constraintEnd_toEndOf="@+id/wheel2"
+            app:layout_constraintStart_toEndOf="@+id/beam2"
+            app:layout_constraintTop_toTopOf="@+id/wheel2" />
 
         <TextView
-            android:id="@+id/tvMessage"
+            android:id="@+id/tvWheel3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="130dp"
-            android:layout_marginTop="63dp"
-            android:layout_marginEnd="140dp"
-            android:text="TextView"
-            android:visibility="invisible" />
-    </RelativeLayout>
+            android:text="Temp"
+            app:layout_constraintBottom_toBottomOf="@+id/wheel3"
+            app:layout_constraintEnd_toStartOf="@+id/beam3"
+            app:layout_constraintStart_toStartOf="@+id/wheel3"
+            app:layout_constraintTop_toTopOf="@+id/wheel3" />
+
+        <TextView
+            android:id="@+id/tvWheel4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temp"
+            app:layout_constraintBottom_toBottomOf="@+id/wheel4"
+            app:layout_constraintEnd_toEndOf="@+id/wheel4"
+            app:layout_constraintStart_toStartOf="@+id/wheel4"
+            app:layout_constraintTop_toTopOf="@+id/wheel4" />
+
+        <TextView
+            android:id="@+id/tvWheel5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temp"
+            app:layout_constraintBottom_toBottomOf="@+id/wheel5"
+            app:layout_constraintEnd_toStartOf="@+id/beam4"
+            app:layout_constraintStart_toStartOf="@+id/wheel5"
+            app:layout_constraintTop_toTopOf="@+id/wheel5" />
+
+        <TextView
+            android:id="@+id/tvWheel6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temp"
+            app:layout_constraintBottom_toBottomOf="@+id/wheel6"
+            app:layout_constraintEnd_toEndOf="@+id/wheel6"
+            app:layout_constraintStart_toStartOf="@+id/wheel6"
+            app:layout_constraintTop_toTopOf="@+id/wheel6" />
+
+        <TextView
+            android:id="@+id/tvWheel7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temp"
+            app:layout_constraintBottom_toBottomOf="@+id/wheel7"
+            app:layout_constraintEnd_toStartOf="@+id/beam5"
+            app:layout_constraintStart_toStartOf="@+id/wheel7"
+            app:layout_constraintTop_toTopOf="@+id/wheel7" />
+
+        <TextView
+            android:id="@+id/tvWheel8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temp"
+            app:layout_constraintBottom_toBottomOf="@+id/wheel8"
+            app:layout_constraintEnd_toEndOf="@+id/wheel8"
+            app:layout_constraintStart_toEndOf="@+id/beam5"
+            app:layout_constraintTop_toTopOf="@+id/wheel8" />
+
+        <TextView
+            android:id="@+id/tvWheel9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temp"
+            app:layout_constraintBottom_toBottomOf="@+id/wheel9"
+            app:layout_constraintEnd_toEndOf="@+id/wheel9"
+            app:layout_constraintStart_toStartOf="@+id/wheel9"
+            app:layout_constraintTop_toTopOf="@+id/wheel9" />
+
+        <TextView
+            android:id="@+id/tvWheel10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temp"
+            app:layout_constraintBottom_toBottomOf="@+id/wheel10"
+            app:layout_constraintEnd_toEndOf="@+id/wheel10"
+            app:layout_constraintStart_toEndOf="@+id/bram6"
+            app:layout_constraintTop_toTopOf="@+id/wheel10" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

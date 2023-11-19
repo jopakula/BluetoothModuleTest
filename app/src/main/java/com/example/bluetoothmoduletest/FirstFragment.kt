@@ -91,36 +91,36 @@ class FirstFragment : Fragment(), BluetoothController.Listener {
             val temp10 = json.getInt("temperature2")
 
             Log.d("MyApp", "Temperature1: $temp1")
-            binding.tvMessage2.text = "Temp \n $temp1 °C"
-            binding.tvMessage3.text = "Temp \n $temp2 °C"
-            binding.tvMessage4.text = "Temp \n $temp3°C"
-            binding.tvMessage5.text = "Temp \n $temp4 °C"
-            binding.tvMessage6.text = "Temp \n $temp5 °C"
-            binding.tvMessage7.text = "Temp \n $temp6 °C"
-            binding.tvMessage8.text = "Temp \n $temp7°C"
-            binding.tvMessage9.text = "Temp \n $temp8 °C"
-            binding.tvMessage10.text = "Temp \n $temp9 °C"
-            binding.tvMessage11.text = "Temp \n $temp10 °C"
+            binding.tvWheel1.text = "Temp \n $temp1 °C"
+            binding.tvWheel2.text = "Temp \n $temp2 °C"
+            binding.tvWheel3.text = "Temp \n $temp3°C"
+            binding.tvWheel4.text = "Temp \n $temp4 °C"
+            binding.tvWheel5.text = "Temp \n $temp5 °C"
+            binding.tvWheel6.text = "Temp \n $temp6 °C"
+            binding.tvWheel7.text = "Temp \n $temp7°C"
+            binding.tvWheel8.text = "Temp \n $temp8 °C"
+            binding.tvWheel9.text = "Temp \n $temp9 °C"
+            binding.tvWheel10.text = "Temp \n $temp10 °C"
 
             if (temp1 > 100) {
-                binding.overlayImage.setImageResource(R.drawable.wheel_view_top_red)
+                binding.wheel1.setImageResource(R.drawable.wheel_view_top_red1_preview_rev_1)
             } else {
-                binding.overlayImage.setImageResource(R.drawable.wheel_view_top)
+                binding.wheel1.setImageResource(R.drawable.wheel_view_top1_preview_rev_1)
             }
             if (temp2 > 100) {
-                binding.overlayImage2.setImageResource(R.drawable.wheel_view_top_red)
+                binding.wheel2.setImageResource(R.drawable.wheel_view_top_red1_preview_rev_1)
             } else {
-                binding.overlayImage2.setImageResource(R.drawable.wheel_view_top)
+                binding.wheel2.setImageResource(R.drawable.wheel_view_top1_preview_rev_1)
             }
             if (temp3 > 100) {
-                binding.overlayImage3.setImageResource(R.drawable.wheel_view_top_red)
+                binding.wheel3.setImageResource(R.drawable.wheel_view_top_red1_preview_rev_1)
             } else {
-                binding.overlayImage3.setImageResource(R.drawable.wheel_view_top)
+                binding.wheel3.setImageResource(R.drawable.wheel_view_top1_preview_rev_1)
             }
             if (temp4 > 100) {
-                binding.overlayImage4.setImageResource(R.drawable.wheel_view_top_red)
+                binding.wheel4.setImageResource(R.drawable.wheel_view_top_red1_preview_rev_1)
             } else {
-                binding.overlayImage4.setImageResource(R.drawable.wheel_view_top)
+                binding.wheel4.setImageResource(R.drawable.wheel_view_top1_preview_rev_1)
             }
         } catch (e: JSONException) {
             e.printStackTrace()
