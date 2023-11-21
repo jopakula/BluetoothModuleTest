@@ -28,6 +28,15 @@
         <action
             android:id="@+id/action_firstFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_truckFragment1"
+            app:destination="@id/truckFragment1" />
+        <action
+            android:id="@+id/action_firstFragment_to_truckFragment2"
+            app:destination="@id/truckFragment2" />
+        <action
+            android:id="@+id/action_firstFragment_to_truckFragment6"
+            app:destination="@id/truckFragment6" />
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
@@ -36,5 +45,68 @@
         <action
             android:id="@+id/action_secondFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_truckFragment3"
+            app:destination="@id/truckFragment3" />
+        <action
+            android:id="@+id/action_secondFragment_to_truckFragment4"
+            app:destination="@id/truckFragment4" />
+        <action
+            android:id="@+id/action_secondFragment_to_truckFragment5"
+            app:destination="@id/truckFragment5" />
+    </fragment>
+    <fragment
+        android:id="@+id/truckFragment1"
+        android:name="com.example.bluetoothmoduletest.TruckFragment1"
+        android:label="fragment_truck1"
+        tools:layout="@layout/fragment_truck1" >
+        <action
+            android:id="@+id/action_truckFragment1_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/truckFragment2"
+        android:name="com.example.bluetoothmoduletest.TruckFragment2"
+        android:label="fragment_truck2"
+        tools:layout="@layout/fragment_truck2" >
+        <action
+            android:id="@+id/action_truckFragment2_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/truckFragment3"
+        android:name="com.example.bluetoothmoduletest.TruckFragment3"
+        android:label="fragment_truck3"
+        tools:layout="@layout/fragment_truck3" >
+        <action
+            android:id="@+id/action_truckFragment3_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/truckFragment4"
+        android:name="com.example.bluetoothmoduletest.TruckFragment4"
+        android:label="fragment_truck4"
+        tools:layout="@layout/fragment_truck4" >
+        <action
+            android:id="@+id/action_truckFragment4_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/truckFragment5"
+        android:name="com.example.bluetoothmoduletest.TruckFragment5"
+        android:label="fragment_truck5"
+        tools:layout="@layout/fragment_truck5" >
+        <action
+            android:id="@+id/action_truckFragment5_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/truckFragment6"
+        android:name="com.example.bluetoothmoduletest.TruckFragment6"
+        android:label="fragment_truck6"
+        tools:layout="@layout/fragment_truck6" >
+        <action
+            android:id="@+id/action_truckFragment6_to_firstFragment"
+            app:destination="@id/firstFragment" />
     </fragment>
 </navigation>
